@@ -8,6 +8,7 @@
     ./hyprland.nix
     ./locale.nix
     ./network.nix
+    ./nh.nix
     ./nix.nix
     ./packages.nix
     ./timezone.nix

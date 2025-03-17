@@ -8,9 +8,6 @@
     shellAliases = {
       ls = "ls -a --color";
       se = "sudoedit";
-      hms = "nix run home-manager -- switch --flake $(readlink -f /etc/nixos)#andrei";
-      sw = "sudo nixos-rebuild switch --flake $(readlink -f /etc/nixos)#nixos";
-      upd = "sudo nixos-rebuild switch --flake $(readlink -f /etc/nixos)#nixos --update";
     };
 
     # zplug = {

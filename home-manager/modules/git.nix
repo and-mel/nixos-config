@@ -3,5 +3,8 @@
     enable = true;
     userName = "and-mel";
     userEmail = "amelikhov9836@gmail.com";
+    extraConfig = {
+      credential.helper = "oauth";
+    };
   };
 }
