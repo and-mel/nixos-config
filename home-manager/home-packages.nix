@@ -22,5 +22,6 @@
     playerctl
     spotify
     vesktop
+    wallust
 	];
 }

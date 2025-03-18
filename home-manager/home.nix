@@ -1,5 +1,6 @@
 { homeStateVersion, user, ... }: {
 	imports = [
+	  ./dotfiles
 	  ./modules
 		./home-packages.nix
 	];
