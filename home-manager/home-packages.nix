@@ -18,5 +18,6 @@
     hyprpolkitagent
     hyprcursor
     spotify
+    vesktop
 	];
 }
