@@ -17,5 +17,6 @@
     zed-editor
     hyprpolkitagent
     hyprcursor
+    spotify
 	];
 }
