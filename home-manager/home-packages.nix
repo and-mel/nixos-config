@@ -10,7 +10,6 @@
     hyprpaper
     rofi-wayland
     xfce.thunar
-    pywal16
     killall
     python313Packages.pip
     python3

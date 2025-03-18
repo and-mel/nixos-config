@@ -1,0 +1,5 @@
+{
+  programs.wallust {
+    enabled = true;
+  }
+}
