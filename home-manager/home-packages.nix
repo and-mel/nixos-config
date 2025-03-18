@@ -1,7 +1,9 @@
 { pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
 	home.packages = with pkgs; [
-    neovim
+	  nil
+		nixd
+		neovim
     waybar
     brave
     kitty
@@ -17,6 +19,7 @@
     zed-editor
     hyprpolkitagent
     hyprcursor
+    playerctl
     spotify
     vesktop
 	];

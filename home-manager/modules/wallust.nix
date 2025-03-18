@@ -1,5 +1,5 @@
 {
-  programs.wallust {
+  options.programs.wallust = {
     enabled = true;
-  }
+  };
 }
