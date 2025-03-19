@@ -1,4 +1,5 @@
-{ stateVersion, hostname, ... }: {
+{ stateVersion, hostname, ... }:
+{
   imports = [
     ./hardware-configuration.nix
     ../../modules

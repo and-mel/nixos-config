@@ -1,9 +1,10 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   nixpkgs.config.allowUnfree = true;
-	home.packages = with pkgs; [
-	  nil
-		nixd
-		neovim
+  home.packages = with pkgs; [
+    nil
+    nixd
+    neovim
     waybar
     brave
     dunst
@@ -24,5 +25,5 @@
     vesktop
     wallust
     git-credential-oauth
-	];
+  ];
 }

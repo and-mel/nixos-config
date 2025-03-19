@@ -1,4 +1,5 @@
-{ config, ... }: {
+{ config, pkgs, ... }:
+{
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -10,13 +11,13 @@
       se = "sudoedit";
     };
 
-    # zplug = {
-    #   enable = true;
-    #   plugins = [
-    #     { name = "zsh-users/zsh-autosuggestions"; }
-    #     { name = "romkatv/powerlevel10k"; }
-    #   ];
-    # };
+    plugins = [
+      {
+        name = "powerlevel10k";
+        src = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+    ];
 
     history = {
       size = 5000;
@@ -24,5 +25,9 @@
       ignoreAllDups = true;
       ignoreSpace = true;
     };
+
+    initExtra = ''
+      source ~/.p10k.zsh
+    '';
   };
 }

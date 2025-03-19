@@ -1,4 +1,5 @@
-{ lib, pkgs, ... }: {
+{ lib, pkgs, ... }:
+{
   fileSystems."/mnt/ntfs" = {
     device = "/dev/disk/by-uuid/E81A32E41A32AF84";
     fsType = "ntfs";
