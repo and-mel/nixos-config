@@ -12,4 +12,6 @@
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
+
+  services.logind.extraConfig = "HandlePowerKey=suspend";
 }

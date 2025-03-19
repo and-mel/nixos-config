@@ -10,7 +10,7 @@
     libnotify
     hyprpaper
     rofi-wayland
-    xfce.thunar
+    yazi
     killall
     python313Packages.pip
     python3
