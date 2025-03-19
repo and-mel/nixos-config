@@ -1,6 +1,6 @@
 backend = "fastresize"
 color_space = "lch"
-palette = "dark"
+palette = "harddark16"
 
 [templates]
 rofi.template = 'colors-rofi.rasi'
@@ -9,3 +9,5 @@ waybar.template = 'colors-waybar.css'
 waybar.target = '~/.config/waybar/colors-wallust.css'
 hypr.template = 'colors-hypr.conf'
 hypr.target = '~/.config/hypr/themes/wallust.conf'
+kitty.template = 'colors-kitty.conf'
+kitty.target = '~/.config/kitty/colors.conf'

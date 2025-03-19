@@ -1,7 +1,8 @@
 {
   imports = [
-    ./git.nix
     ./hyprland
+    ./git.nix
+    ./kitty.nix
     ./zsh.nix
   ];
 }

@@ -6,7 +6,6 @@
 		neovim
     waybar
     brave
-    kitty
     dunst
     libnotify
     hyprpaper

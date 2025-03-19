@@ -3,6 +3,8 @@
     enable = true;
 
     settings = {
+      source = "./themes/wallust.conf";
+
       env = [
         "NIXOS_OZONE_WL,1"
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -35,7 +37,7 @@
           border_size = 2;
 
           "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
-          "col.inactive_border" = "rgba(3c3836ff)";
+          "col.inactive_border" = "$color6";
           bezier = "linear, 0.0, 0.0, 1.0, 1.0";
 
           resize_on_border = false;
