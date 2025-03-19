@@ -19,8 +19,10 @@
     hyprpolkitagent
     hyprcursor
     playerctl
+    libsecret
     spotify
     vesktop
     wallust
+    git-credential-oauth
 	];
 }
