@@ -5,6 +5,8 @@
     settings = {
       include = "./colors.conf";
 
+      enable_audio_bell = "no";
+
       font_family = "family='JetBrainsMono Nerd Font Mono'";
       bold_font = "auto";
       italic_font = "auto";
