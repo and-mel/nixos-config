@@ -4,14 +4,14 @@
   home.packages = with pkgs; [
     nil
     nixd
+    prismlauncher
     neovim
     waybar
-    brave
+    librewolf-bin
     dunst
     libnotify
     hyprpaper
     rofi-wayland
-    yazi
     killall
     python313Packages.pip
     python3
@@ -26,5 +26,6 @@
     vesktop
     wallust
     git-credential-oauth
+    bibata-cursors
   ];
 }

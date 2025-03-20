@@ -2,7 +2,7 @@
   gtk = {
     enable = true;
     cursorTheme = {
-      name = "Adwaita";
+      name = "Bibata-Modern-Classic";
       size = 24;
     };
   };

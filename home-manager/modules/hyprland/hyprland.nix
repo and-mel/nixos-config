@@ -11,9 +11,9 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
-        "XCURSOR_THEME,NotwaitaBlack"
+        "XCURSOR_THEME,Bibata-Modern-Classic"
         "XCURSOR_SIZE,24"
-        "HYPRCURSOR_THEME,NotwaitaBlack"
+        "HYPRCURSOR_THEME,Bibata-Modern-Classic"
         "HYPRCURSOR_SIZE,24"
       ];
 
@@ -23,7 +23,7 @@
       ];
 
       "$terminal" = "kitty";
-      "$fileManager" = "thunar";
+      "$fileManager" = "yazi";
       "$menu" = "rofi -show drun -show-icons";
 
       exec-once = [
@@ -115,9 +115,7 @@
       };
 
       xwayland = {
-        force_zero_scaling = true;
-        use_nearest_neighbor = true;
-        enabled = true;
+        enabled = false;
       };
     };
   };

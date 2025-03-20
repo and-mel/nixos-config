@@ -1,0 +1,64 @@
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: #cdd6f4;
+}
+
+.module {
+  background: #000000;
+  opacity: 1;
+  padding: 1.5px 7px 1.5px 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7px 7px 7px 7px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+tooltip {
+  background: #000000;
+  border-radius: 7px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: #8aadf4;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#workspaces button {
+  color: #313244;
+  padding: 2px 5px;
+  margin: 1px 1px;
+}
+
+#workspaces button.active {
+  color: #f5a97f;
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+  background: #eba0ac;
+  border-radius: 7px;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: #a6e3a1;
+  border-radius: 7px;
+}
+
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+  border-radius: 7px;
+}
