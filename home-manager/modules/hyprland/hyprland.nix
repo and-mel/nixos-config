@@ -23,7 +23,7 @@
       ];
 
       "$terminal" = "kitty";
-      "$fileManager" = "yazi";
+      "$fileManager" = "kitty yazi";
       "$menu" = "rofi -show drun -show-icons";
 
       exec-once = [
