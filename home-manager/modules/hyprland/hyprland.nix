@@ -17,11 +17,6 @@
         "HYPRCURSOR_SIZE,24"
       ];
 
-      monitor = [
-        "HDMI-A-1, 1920x1080@60, 0x0, 1"
-        "DP-1, 3840x2160@60, 1920x0, 1.50"
-      ];
-
       "$terminal" = "kitty";
       "$fileManager" = "kitty yazi";
       "$menu" = "rofi -show drun -show-icons";
