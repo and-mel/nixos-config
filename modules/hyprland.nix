@@ -14,5 +14,7 @@
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
-  services.logind.extraConfig = "HandlePowerKey=suspend";
+  services.logind.extraConfig = "HandlePowerKey=suspend"; # Hypridle
+  security.pam.services.hyprlock = { }; # Hyprlock
+  security.polkit.enable = true; # Hyprpolkitagent
 }

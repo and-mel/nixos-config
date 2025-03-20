@@ -15,10 +15,11 @@
     killall
     python313Packages.pip
     python3
-    stdenv.cc.cc.lib
     zed-editor
     hyprpolkitagent
     hyprcursor
+    hyprlock
+    hypridle
     playerctl
     libsecret
     spotify

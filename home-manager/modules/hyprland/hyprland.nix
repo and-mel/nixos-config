@@ -29,6 +29,7 @@
       exec-once = [
         "hyprpaper"
         "waybar"
+        "systemctl --user start hyprpolkitagent"
       ];
 
       general = {
