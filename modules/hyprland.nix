@@ -10,7 +10,7 @@
     bibata-cursors
     waybar
     wallust
-    rofi-rofi-wayland
+    rofi-wayland
     libnotify
     dunst
     playerctl
