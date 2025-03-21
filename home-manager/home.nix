@@ -1,7 +1,6 @@
 {
   homeStateVersion,
   user,
-  config,
   ...
 }:
 {
@@ -9,7 +8,6 @@
     ./dotfiles
     ./modules
     ./home-packages.nix
-    ./hosts/${config.networking.host}.nix
   ];
 
   home = {

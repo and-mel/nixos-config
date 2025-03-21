@@ -1,3 +1,4 @@
+{ monitor, ... }:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -17,7 +18,7 @@
         "HYPRCURSOR_SIZE,24"
       ];
 
-      monitor = ", preferred, auto, auto";
+      monitor = monitor;
 
       "$terminal" = "kitty";
       "$fileManager" = "$terminal yazi";
