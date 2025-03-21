@@ -27,5 +27,6 @@
     git-credential-oauth
     bibata-cursors
     btop
+    brightnessctl
   ];
 }
