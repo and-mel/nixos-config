@@ -17,6 +17,8 @@
         "HYPRCURSOR_SIZE,24"
       ];
 
+      monitor = ", preferred, auto, auto";
+
       "$terminal" = "kitty";
       "$fileManager" = "kitty yazi";
       "$menu" = "rofi -show drun -show-icons";

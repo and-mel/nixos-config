@@ -1,4 +1,7 @@
 {
+  imports = [
+    ./modules.nix
+  ];
   programs.waybar = {
     enable = true;
     style = ./style.css;

@@ -2,7 +2,6 @@
   stateVersion,
   hostname,
   inputs,
-  user,
   ...
 }:
 {
@@ -11,12 +10,6 @@
     ../../modules
     inputs.home-manager.nixosModules.default
   ];
-
-  home-manager = {
-    users = {
-      "${user}" = import ./home.nix;
-    };
-  };
 
   networking.hostName = hostname;
 

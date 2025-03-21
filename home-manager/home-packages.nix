@@ -7,7 +7,6 @@
     prismlauncher
     neovim
     waybar
-    librewolf-bin
     dunst
     libnotify
     hyprpaper
