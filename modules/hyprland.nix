@@ -1,5 +1,22 @@
 { pkgs, ... }:
 {
+  environment.systemPackages = with pkgs; [
+    hyprcursor
+    hyprlock
+    hypridle
+    hyprpaper
+    hyprpolkitagent
+
+    bibata-cursors
+    waybar
+    wallust
+    rofi-rofi-wayland
+    libnotify
+    dunst
+    playerctl
+    brightnessctl
+  ];
+
   hardware = {
     graphics.enable = true;
   };

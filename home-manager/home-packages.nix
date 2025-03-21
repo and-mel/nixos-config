@@ -2,31 +2,20 @@
 {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
-    nil
-    nixd
-    prismlauncher
-    neovim
-    waybar
-    dunst
-    libnotify
-    hyprpaper
-    rofi-wayland
-    killall
-    python313Packages.pip
-    python3
-    zed-editor
-    hyprpolkitagent
-    hyprcursor
-    hyprlock
-    hypridle
-    playerctl
-    libsecret
+    # Desktop apps
     spotify
     vesktop
-    wallust
+    zed-editor
+    prismlauncher
+
+    # Programming launguages & LSPs
+    nil
+    nixd
+    python313Packages.pip
+    python3
+    zulu23
+
+    # Utilities
     git-credential-oauth
-    bibata-cursors
-    btop
-    brightnessctl
   ];
 }

@@ -3,8 +3,10 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    btop
     home-manager
     gcc
+    neovim
     nixfmt-rfc-style
   ];
 
