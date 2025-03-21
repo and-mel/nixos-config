@@ -1,8 +1,7 @@
 {
   programs.waybar.settings.mainBar = {
     "clock" = {
-      "format" = " { =%H =%M}";
-      "format-alt" = "{ =%A; %B %d; %Y (%R)}  ";
+      "format" = " {:%H:%M}";
       "tooltip-format" = "<tt>{calendar}</tt>";
       "calendar" = {
         "mode" = "month";
@@ -63,6 +62,16 @@
         ""
         ""
       ];
+    };
+
+    "battery" = {
+      "format" = "bat {capacity}%";
+      "interval" = 5;
+      "states" = {
+        "warning" = 20;
+        "critical" = 10;
+      };
+      "tooltip" = false;
     };
   };
 }

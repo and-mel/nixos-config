@@ -14,8 +14,6 @@
         margin-right = 16;
         height = 16;
 
-        include = [ "~/.config/waybar/modules.json" ];
-
         modules-left = [
           "hyprland/workspaces"
         ];
@@ -25,6 +23,7 @@
         ];
 
         modules-right = [
+          "battery"
           "pulseaudio"
           "cpu"
           "memory"

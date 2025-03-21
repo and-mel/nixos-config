@@ -20,7 +20,7 @@
       monitor = ", preferred, auto, auto";
 
       "$terminal" = "kitty";
-      "$fileManager" = "kitty yazi";
+      "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun -show-icons";
 
       exec-once = [

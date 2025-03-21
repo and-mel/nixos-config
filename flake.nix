@@ -28,6 +28,10 @@
           hostname = "nixos";
           stateVersion = "24.11";
         }
+        {
+          hostname = "t480s";
+          stateVersion = "24.11";
+        }
       ];
 
       makeSystem =
