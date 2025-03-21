@@ -1,9 +1,15 @@
-{ homeStateVersion, user, ... }:
+{
+  homeStateVersion,
+  user,
+  config,
+  ...
+}:
 {
   imports = [
     ./dotfiles
     ./modules
     ./home-packages.nix
+    ./hosts/${config.networking.host}.nix
   ];
 
   home = {
