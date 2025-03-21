@@ -26,5 +26,6 @@
     wallust
     git-credential-oauth
     bibata-cursors
+    btop
   ];
 }

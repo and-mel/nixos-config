@@ -65,13 +65,25 @@
     };
 
     "battery" = {
-      "format" = "bat {capacity}%";
-      "interval" = 5;
+      "bat" = "BAT0";
+
+      "interval" = 10;
       "states" = {
-        "warning" = 20;
-        "critical" = 10;
+        "warning" = 30;
+        "critical" = 15;
       };
-      "tooltip" = false;
+      # Connected to AC
+      "format" = "  {icon}  {capacity}%"; # Icon = bolt
+      # Not connected to AC
+      "format-discharging" = "{icon}  {capacity}%";
+      "format-icons" = [
+        ""
+        ""
+        ""
+        ""
+        ""
+      ];
+      "tooltip" = true;
     };
   };
 }
