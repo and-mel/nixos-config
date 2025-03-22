@@ -12,6 +12,7 @@
         "$mainMod, R, exec, $menu"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
+        "$mainMod, L, exec, loginctl lock-session"
 
         "$mainMod SHIFT, B, exec, pkill waybar && waybar"
 

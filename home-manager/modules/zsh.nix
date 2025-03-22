@@ -27,7 +27,15 @@
     };
 
     initExtra = ''
-      source ~/.p10k.zsh
+      # Powerlevel10k
+      if [ -n "$DISPLAY" ]; then
+        source ~/.p10k.zsh
+      fi
+
+      # Start UWSM
+      if uwsm check may-start > /dev/null && uwsm select; then
+        exec systemd-cat -t uwsm_start uwsm start default
+      fi
     '';
   };
 }
