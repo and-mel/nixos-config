@@ -6,8 +6,10 @@
     btop
     home-manager
     gcc
+    neofetch
     neovim
     nixfmt-rfc-style
+    wine
   ];
 
   fonts.packages = with pkgs; [

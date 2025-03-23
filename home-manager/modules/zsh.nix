@@ -28,13 +28,13 @@
 
     initExtra = ''
       # Powerlevel10k
-      if [ -n "$DISPLAY" ]; then
-        source ~/.p10k.zsh
-      fi
+      source ~/.p10k.zsh
+
+      exec fortune -s | cowsay
 
       # Start UWSM
-      if uwsm check may-start > /dev/null && uwsm select; then
-        exec systemd-cat -t uwsm_start uwsm start default
+      if uwsm check may-start; then
+        exec uwsm start -S hyprland-uwsm.desktop
       fi
     '';
   };

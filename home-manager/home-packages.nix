@@ -3,10 +3,11 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     # Desktop apps
+    lutris
+    prismlauncher
     spotify
     vesktop
     zed-editor
-    prismlauncher
 
     # Programming launguages & LSPs
     nil
@@ -17,5 +18,7 @@
 
     # Utilities
     git-credential-oauth
+    cowsay
+    fortune
   ];
 }

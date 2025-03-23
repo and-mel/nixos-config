@@ -3,6 +3,8 @@
   wayland.windowManager.hyprland = {
     enable = true;
 
+    systemd.enable = false;
+
     settings = {
       source = "./themes/wallust.conf";
 
@@ -26,6 +28,7 @@
 
       exec-once = [
         "hyprpaper"
+        "hypridle"
         "waybar"
         "systemctl --user start hyprpolkitagent"
       ];
@@ -110,10 +113,6 @@
       misc = {
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
-      };
-
-      xwayland = {
-        enabled = false;
       };
     };
   };

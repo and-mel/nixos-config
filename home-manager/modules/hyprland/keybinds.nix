@@ -14,12 +14,14 @@
         "$mainMod, J, togglesplit,"
         "$mainMod, L, exec, loginctl lock-session"
 
-        "$mainMod SHIFT, B, exec, pkill waybar && waybar"
+        "$mainMod SHIFT, B, exec, pkill waybar; waybar"
 
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
         "$mainMod, up, movefocus, u"
         "$mainMod, down, movefocus, d"
+
+        ", PRINT, exec, hyprshot -m region"
 
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"

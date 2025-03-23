@@ -6,7 +6,13 @@
       size = 24;
     };
     theme = {
-      name = "Adwaita-dark";
+      name = "Adwaita";
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
     };
   };
 }

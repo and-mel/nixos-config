@@ -6,6 +6,7 @@
     hypridle
     hyprpaper
     hyprpolkitagent
+    hyprshot
 
     bibata-cursors
     waybar
@@ -20,6 +21,8 @@
   hardware = {
     graphics.enable = true;
   };
+
+  programs.uwsm.enable = true;
 
   programs.hyprland = {
     enable = true;
