@@ -51,20 +51,20 @@
           ];
         };
 
+      overlays = import ./overlays { inherit inputs; };
+
       mkHomeConfiguration =
         args:
-        home-manager.lib.homeManagerConfiguration ({
+        home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./home-manager/home.nix ];
 
           extraSpecialArgs = {
-            inherit homeStateVersion user;
+            inherit homeStateVersion user overlays;
           } // args;
-        });
+        };
     in
     {
-      overlays = import ./overlays { inherit inputs; };
-
       nixosConfigurations = nixpkgs.lib.foldl' (
         configs: host:
         configs

@@ -12,6 +12,8 @@
       background = {
         monitor = "";
         path = "$HOME/wallpapers/wallpaper.jpg"; # only png supported for now
+        blur_size = 5;
+        blur_passes = 1; # 0 disables blurring
       };
 
       input-field = {

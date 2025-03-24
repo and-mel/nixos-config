@@ -1,6 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, overlays, ... }:
 {
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [ overlays.unstable-packages ];
+
   home.packages = with pkgs; [
     # Desktop apps
     lutris
@@ -8,6 +10,8 @@
     spotify
     vesktop
     zed-editor
+    unstable.mcpelauncher-client
+    unstable.mcpelauncher-ui-qt
 
     # Programming launguages & LSPs
     nil
