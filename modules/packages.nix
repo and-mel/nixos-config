@@ -9,7 +9,6 @@
     neofetch
     neovim
     nixfmt-rfc-style
-    wine
   ];
 
   fonts.packages = with pkgs; [

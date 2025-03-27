@@ -1,6 +1,10 @@
 {
   home.file = {
     ".config/wallust".source = ./wallust;
-    ".config/scripts".source = ./scripts;
+    ".config/hypr/scripts" = {
+      source = ./hyprscripts;
+      recursive = true;
+      executable = true;
+    };
   };
 }

@@ -5,7 +5,6 @@
 
   home.packages = with pkgs; [
     # Desktop apps
-    lutris
     prismlauncher
     spotify
     vesktop

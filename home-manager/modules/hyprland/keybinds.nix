@@ -15,6 +15,7 @@
         "$mainMod, L, exec, loginctl lock-session"
 
         "$mainMod SHIFT, B, exec, pkill waybar; waybar"
+        "$mainMod SHIFT, W, exec, ./scripts/change-wallpaper.sh"
 
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
