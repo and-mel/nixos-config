@@ -9,7 +9,6 @@
     prismlauncher
     spotify
     vesktop
-    vscode
     unstable.mcpelauncher-client
     unstable.mcpelauncher-ui-qt
 
