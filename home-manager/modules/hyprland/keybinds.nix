@@ -1,4 +1,9 @@
+{ monitor, lib, ... }:
+let
+  mod = a: b: a - (b * (a / b));
+in
 {
+
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
 
@@ -15,7 +20,7 @@
         "$mainMod, L, exec, loginctl lock-session"
 
         "$mainMod SHIFT, B, exec, pkill waybar; waybar"
-        "$mainMod SHIFT, W, exec, ./scripts/change-wallpaper.sh"
+        "$mainMod SHIFT, W, exec, ~/.config/hypr/scripts/change-wallpaper.sh"
 
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
@@ -67,5 +72,20 @@
       ", XF86AudioPlay, exec, playerctl play-pause"
       ", XF86AudioPrev, exec, playerctl previous"
     ];
+
+    workspace =
+      # workspaces
+      # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+      builtins.concatLists (
+        builtins.genList (
+          i:
+          let
+            ws = i + 1;
+          in
+          [
+            "${toString ws}, monitor:${builtins.elemAt (lib.strings.splitString "," (builtins.elemAt monitor (mod ws (builtins.length monitor)))) 0}"
+          ]
+        ) 9
+      );
   };
 }
