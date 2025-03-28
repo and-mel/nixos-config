@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p git curl
+#!nix-shell -i bash
 
 wal=$(find ~/wallpapers -mindepth 1 -maxdepth 1 ! -type l | rofi -dmenu)
 if [ $wal ]; then
