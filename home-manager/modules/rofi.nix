@@ -1,6 +1,10 @@
+{ pkgs, ... }:
 {
   programs.rofi = {
     enable = true;
-    theme = "shared/colors.rasi";
+    package = pkgs.rofi-wayland;
+    theme = "~/.config/rofi/themes/rounded-dark.rasi";
+    extraConfig = {
+    };
   };
 }
