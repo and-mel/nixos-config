@@ -9,7 +9,6 @@
     neofetch
     neovim
     nixfmt-rfc-style
-    plover.dev
   ];
 
   fonts.packages = with pkgs; [
