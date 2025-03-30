@@ -12,6 +12,7 @@
     ./nh.nix
     ./nix.nix
     ./packages.nix
+    ./qt.nix
     ./timezone.nix
     ./user.nix
   ];
