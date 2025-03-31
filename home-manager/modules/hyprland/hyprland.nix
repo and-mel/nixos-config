@@ -38,7 +38,7 @@
         gaps_out = "5, 20, 20, 20";
         border_size = 2;
 
-        "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
+        "col.active_border" = "$color7 $color15 45deg";
         "col.inactive_border" = "$color6";
         bezier = "linear, 0.0, 0.0, 1.0, 1.0";
 
