@@ -1,15 +1,27 @@
-{ pkgs, overlays, ... }:
+{
+  pkgs,
+  overlays,
+  ...
+}:
 {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ overlays.unstable-packages ];
+  nixpkgs.overlays = [
+    overlays.nur
+  ];
 
   home.packages = with pkgs; [
     # Desktop apps
+    audacity
+    msalsdk-dbusclient
     prismlauncher
     spotify
     vesktop
-    unstable.mcpelauncher-client
-    unstable.mcpelauncher-ui-qt
+    vlc
+    ungoogled-chromium
+    kdePackages.kdenlive
+    mcpelauncher-client
+    mcpelauncher-ui-qt
+    zenity
 
     # Programming launguages & LSPs
     nil

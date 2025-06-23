@@ -3,11 +3,11 @@
     enable = true;
 
     settings = {
-      include = "./colors.conf";
+      # include = "./colors.conf";
 
       enable_audio_bell = "no";
 
-      font_family = "family='JetBrainsMono Nerd Font Mono'";
+      font_family = "family='JetBrainsMono Nerd Font'";
       bold_font = "auto";
       italic_font = "auto";
       bold_italic_font = "auto";

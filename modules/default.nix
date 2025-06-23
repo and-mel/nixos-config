@@ -12,6 +12,7 @@
     ./nh.nix
     ./nix.nix
     ./packages.nix
+    ./stylix.nix
     ./timezone.nix
     ./user.nix
   ];

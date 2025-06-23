@@ -6,7 +6,7 @@
     systemd.enable = false;
 
     settings = {
-      source = "./themes/wallust.conf";
+      # source = "./themes/wallust.conf";
 
       env = [
         "NIXOS_OZONE_WL,1"
@@ -38,8 +38,8 @@
         gaps_out = "5, 20, 20, 20";
         border_size = 2;
 
-        "col.active_border" = "$color7 $color15 45deg";
-        "col.inactive_border" = "$color6";
+        # "col.active_border" = "$color7 $color15 45deg";
+        # "col.inactive_border" = "$color6";
         bezier = "linear, 0.0, 0.0, 1.0, 1.0";
 
         resize_on_border = false;
@@ -49,7 +49,7 @@
 
       decoration = {
         rounding = 10;
-        # rounding_power = 2
+        rounding_power = 2;
 
         active_opacity = 1.0;
         inactive_opacity = 0.9;
@@ -114,6 +114,11 @@
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
       };
+
+      windowrule = [
+        # "rounding 10, floating:1"
+        "renderunfocused, title:.*Minecraft.*"
+      ];
     };
   };
 }

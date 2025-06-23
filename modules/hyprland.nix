@@ -8,9 +8,10 @@
     hyprpolkitagent
     hyprshot
 
+    base16-schemes
     bibata-cursors
     waybar
-    wallust
+    # wallust
     rofi-wayland
     libnotify
     dunst

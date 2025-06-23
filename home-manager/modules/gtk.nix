@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   gtk = {
     enable = true;
@@ -6,7 +7,8 @@
       size = 24;
     };
     theme = {
-      name = "Adwaita";
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
     };
   };
 

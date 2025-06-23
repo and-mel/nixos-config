@@ -27,7 +27,7 @@
       ignoreSpace = true;
     };
 
-    initExtra = ''
+    initContent = ''
       # Powerlevel10k
       source ~/.p10k.zsh
 
