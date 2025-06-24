@@ -27,9 +27,9 @@
       "$menu" = "rofi -show drun -show-icons";
 
       exec-once = [
-        "hyprpaper"
-        "hypridle"
-        "waybar"
+        "pidof hyprpaper || hyprpaper"
+        "pidof hypridle || hypridle"
+        "pidof waybar || waybar"
         "systemctl --user start hyprpolkitagent"
       ];
 

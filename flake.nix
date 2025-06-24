@@ -7,6 +7,10 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,6 +26,7 @@
       self,
       nixpkgs,
       stylix,
+      nixcord,
       home-manager,
       ...
     }@inputs:
@@ -66,7 +71,11 @@
         args:
         home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home-manager/home.nix ];
+          modules = [
+            stylix.homeModules.stylix
+            nixcord.homeModules.nixcord
+            ./home-manager/home.nix
+          ];
 
           extraSpecialArgs = {
             inherit homeStateVersion user overlays;

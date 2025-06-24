@@ -15,8 +15,8 @@
     msalsdk-dbusclient
     prismlauncher
     spotify
-    vesktop
     vlc
+    obsidian
     ungoogled-chromium
     kdePackages.kdenlive
     mcpelauncher-client

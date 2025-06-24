@@ -3,7 +3,7 @@
     enable = true;
     enableZshIntegration = true;
     settings = {
-      manager = {
+      mgr = {
         show_hidden = true;
         sort_by = "mtime";
         sort_dir_first = true;

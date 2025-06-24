@@ -9,4 +9,6 @@
       "${XDG_BIN_HOME}"
     ];
   };
+
+  environment.etc."issue".text = "Welcome to NixOS - \\l!\n\\d \\t\n\n";
 }
