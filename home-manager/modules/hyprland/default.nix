@@ -5,5 +5,6 @@
     ./hyprlock.nix
     # ./hyprpaper.nix
     ./keybinds.nix
+    ./xdg.nix
   ];
 }
