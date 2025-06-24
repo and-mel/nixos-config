@@ -4,16 +4,17 @@
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/spaceduck.yaml";
 
-    image = ../../modules/nix-glow-black.jpg;
+    image = ./hyprland/wallpaper.png;
     autoEnable = true;
 
     targets = {
       librewolf.profileNames = [ "home" ];
+      waybar.enable = false;
     };
 
     opacity = {
       applications = 1.0;
-      desktop = 0.0;
+      desktop = 0.3;
       popups = 1.0;
       terminal = 1.0;
     };
