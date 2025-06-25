@@ -9,6 +9,7 @@
     ./kitty.nix
     ./qt.nix
     ./rofi.nix
+    ./sops.nix
     ./stylix.nix
     ./vscode.nix
     ./yazi.nix

@@ -4,10 +4,10 @@
 
   environment.systemPackages = with pkgs; [
     btop
-    home-manager
     gcc
     neofetch
     neovim
+    home-manager
     nixfmt-rfc-style
     unzip
     zip

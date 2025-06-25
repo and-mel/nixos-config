@@ -1,0 +1,13 @@
+keys:
+  - &users:
+    - &andrei age1zn6g9zjrk9vvma77uk32n5m8myns3skp3zasu3659zp94y70tvmqhzdphh
+  - &hosts:
+    - &nixos age1nrq3f4dlfpa5prph6h859ghyx7ld7w05zqdvdj9qcfj9nm6f6etq7wyzpf
+    - &t480s age1as9x6ylkpjav24wpx20eexdayfh4kheuxn4r7arg6mlhef66r38sqhlfqf
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+    - age:
+      - *andrei
+      - *nixos
+      - *t480s

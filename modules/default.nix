@@ -12,6 +12,8 @@
     ./nh.nix
     ./nix.nix
     ./packages.nix
+    ./sops.nix
+    ./ssh.nix
     ./stylix.nix
     ./timezone.nix
     ./user.nix
