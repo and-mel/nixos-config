@@ -1,5 +1,8 @@
 { lib, ... }:
 {
+  # WARNING! Use the disk layout as defined in /hosts/disk-config.nix, or else
+  # this will possibly break the system!
+
   # Delete root and back it up for 30 days
   boot.initrd.postResumeCommands = lib.mkAfter ''
     mkdir /btrfs_tmp
