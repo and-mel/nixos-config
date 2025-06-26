@@ -16,8 +16,8 @@
     users.${user} = {
       isNormalUser = true;
       uid = 1000;
-      hashedPassword = "$y$j9T$w7pEyq50lwO4wkiw/aYGW.$9TD3SMMCdl3uXThNMLSxngUjqySV0n.P8nkBAyFWgHC";
-      # hashedPasswordFile = config.sops.secrets."passwords/${user}".path;
+      # hashedPassword = "$y$j9T$w7pEyq50lwO4wkiw/aYGW.$9TD3SMMCdl3uXThNMLSxngUjqySV0n.P8nkBAyFWgHC";
+      hashedPasswordFile = config.sops.secrets."passwords/${user}".path;
       extraGroups = [
         "wheel"
         "networkmanager"
