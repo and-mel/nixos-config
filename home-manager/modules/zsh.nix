@@ -29,7 +29,7 @@
 
     initContent = ''
       # Powerlevel10k
-      source ~/.p10k.zsh
+      [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
 
       exec fortune -s | cowsay
 
