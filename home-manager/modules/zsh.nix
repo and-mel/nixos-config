@@ -31,8 +31,6 @@
       # Powerlevel10k
       [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
 
-      exec fortune -s | cowsay
-
       # Start UWSM
       if uwsm check may-start; then
         exec uwsm start -S hyprland-uwsm.desktop

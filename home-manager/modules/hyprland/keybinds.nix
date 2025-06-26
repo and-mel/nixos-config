@@ -27,7 +27,7 @@ in
         "$mainMod, up, movefocus, u"
         "$mainMod, down, movefocus, d"
 
-        ", PRINT, exec, hyprshot -m region"
+        ", PRINT, exec, hyprshot -m region -o ~/Pictures/Screenshots"
 
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"
