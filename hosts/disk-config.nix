@@ -1,9 +1,13 @@
 {
+  device ? throw "Set this to your device, e.g. /dev/sda",
+  ...
+}:
+{
   disko.devices = {
     disk = {
       main = {
+        inherit device;
         type = "disk";
-        device = "/dev/nvme0n1";
         content = {
           type = "gpt";
           partitions = {
@@ -31,11 +35,25 @@
               content = {
                 type = "btrfs";
                 extraArgs = [ "-f" ]; # Override existing partition
-                mountpoint = "/";
-                mountOptions = [
-                  "compress-force=zstd:1"
-                  "noatime"
-                ];
+                subvolumes = {
+                  "@" = {
+                    mountpoint = "/";
+                  };
+                  "@home" = {
+                    mountpoint = "/home";
+                    mountOptions = [
+                      "compress=zstd"
+                      "noatime"
+                    ];
+                  };
+                  "@nix" = {
+                    mountpoint = "/nix";
+                    mountOptions = [
+                      "compress=zstd"
+                      "noatime"
+                    ];
+                  };
+                };
               };
             };
           };
@@ -43,4 +61,7 @@
       };
     };
   };
+
+  fileSystems."/nix".neededForBoot = true;
+  fileSystems."/home".neededForBoot = true;
 }

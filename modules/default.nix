@@ -7,6 +7,7 @@
     ./filesystem.nix
     ./home-manager.nix
     ./hyprland.nix
+    ./impermanence.nix
     ./locale.nix
     ./network.nix
     ./nh.nix

@@ -40,12 +40,16 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Impermanence - Erase root on boot
+    impermanence.url = "github:nix-community/impermanence";
   };
 
   outputs =
     {
       self,
       disko,
+      impermanence,
       nixpkgs,
       home-manager,
       sops-nix,
@@ -86,6 +90,7 @@
             disko.nixosModules.disko
             stylix.nixosModules.stylix
             sops-nix.nixosModules.sops
+            impermanence.nixosModules.impermanence
             ./hosts/${hostname}/configuration.nix
           ];
         };

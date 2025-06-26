@@ -16,7 +16,7 @@
         #   on-resume = "brightnessctl -r";
         # }
         {
-          timeout = 300;
+          timeout = 900;
           on-timeout = "loginctl lock-session";
         }
         # {
@@ -25,7 +25,7 @@
         #   on-resume = "hyprctl dispatch dpms on";
         # }
         {
-          timeout = 600;
+          timeout = 1200;
           on-timeout = "systemctl suspend";
         }
       ];

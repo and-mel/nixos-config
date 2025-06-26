@@ -15,7 +15,9 @@
     defaultUserShell = pkgs.zsh;
     users.${user} = {
       isNormalUser = true;
-      hashedPasswordFile = config.sops.secrets."passwords/${user}".path;
+      uid = 1000;
+      hashedPassword = "$y$j9T$w7pEyq50lwO4wkiw/aYGW.$9TD3SMMCdl3uXThNMLSxngUjqySV0n.P8nkBAyFWgHC";
+      # hashedPasswordFile = config.sops.secrets."passwords/${user}".path;
       extraGroups = [
         "wheel"
         "networkmanager"
