@@ -41,7 +41,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Impermanence - Erase root on boot
+    # Impermanence - Persist certain files on reboot
     impermanence.url = "github:nix-community/impermanence";
   };
 

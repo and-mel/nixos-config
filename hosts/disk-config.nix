@@ -64,4 +64,10 @@
 
   fileSystems."/nix".neededForBoot = true;
   fileSystems."/home".neededForBoot = true;
+
+  fileSystems."/" = {
+    device = "/dev/disk/by-partlabel/disk-main-root";
+    fsType = "btrfs";
+    options = [ "subvol=root" ];
+  };
 }
