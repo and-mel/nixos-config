@@ -11,6 +11,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Nix Darwin (only used in Nix Darwin installations)
+    darwin = {
+      url = "github:lnl7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs-darwin";
+    };
+
     # Home Manager
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -51,6 +57,7 @@
       disko,
       impermanence,
       nixpkgs,
+      darwin,
       home-manager,
       sops-nix,
       stylix,
@@ -70,6 +77,10 @@
         {
           hostname = "t480s";
           stateVersion = "24.11";
+        }
+        {
+          hostname = "asahi";
+          stateVersion = "25.05";
         }
       ];
 
@@ -97,6 +108,23 @@
 
       overlays = import ./overlays { inherit inputs; };
 
+      mkDarwinConfiguration =
+        { hostname, stateVersion }:
+        darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          specialArgs = {
+            inherit
+              inputs
+              stateVersion
+              hostname
+              user
+              ;
+          };
+          modules = [
+            ./hosts/${hostname}/configuration.nix
+          ];
+        };
+
       mkHomeConfiguration =
         args:
         home-manager.lib.homeManagerConfiguration {
@@ -119,6 +147,16 @@
         configs
         // {
           "${host.hostname}" = makeSystem {
+            inherit (host) hostname stateVersion;
+          };
+        }
+      ) { } hosts;
+
+      darwinConfigurations = nixpkgs.lib.foldl' (
+        configs: host:
+        configs
+        // {
+          "${host.hostname}" = mkDarwinConfiguration {
             inherit (host) hostname stateVersion;
           };
         }
